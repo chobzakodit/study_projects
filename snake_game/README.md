@@ -1,10 +1,9 @@
-# **MIPS SPEED RACER**
--Game: **"MIPS Speed Racer"** in MARS 4_5 Assembly Simulator
+# **MIPS SNAKE**
+-Game: **"MIPS SNAKE"** in MARS 4_5 Assembly Simulator
 
 **CONFIG**: 0x10040000 (Heap)   _8x8_ Unit _256x512_ Display, or _16x16_ Unit _512x1024_ Display
                             
-# -- EN-US ---------------------------------------------------------
-_Game based in the classic racing game of Brick Game "9999 in 1", developed in assembly, using the MARS simulator version 4_5._
+_Game based in the classic Snake game developed in assembly, using the MARS simulator version 4_5._
 
 How to execute:
 
