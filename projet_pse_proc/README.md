@@ -1,4 +1,4 @@
-### Shell-implementation of ~top~ linux command
+### Shell-implementation of `top` linux command
 
 Run it with
 ./projet100_0_0.sh [-i] [-s <criteria>] [-d <name_directory>] [-n
