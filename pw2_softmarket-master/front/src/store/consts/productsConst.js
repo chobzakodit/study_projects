@@ -1,0 +1,1 @@
+export const SET_LIST= 'SET_PRODUCTS_LIST'

@@ -1,0 +1,123 @@
+\hypertarget{grille_8c}{}\section{/home/michel/\+Bureau/\+Etudes/\+Td\+D/\+Jeu/src/grille.c File Reference}
+\label{grille_8c}\index{/home/michel/\+Bureau/\+Etudes/\+Td\+D/\+Jeu/src/grille.\+c@{/home/michel/\+Bureau/\+Etudes/\+Td\+D/\+Jeu/src/grille.\+c}}
+{\ttfamily \#include \char`\"{}grille.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{grille_8c_adf5501cc0bbad28f5ffc561d92197e4e}{init\+\_\+grille\+\_\+from\+\_\+file} (char $\ast$filename, \hyperlink{structgrille}{grille} $\ast$g)
+\begin{DoxyCompactList}\small\item\em init\+\_\+grille\+\_\+from\+\_\+file alloue et initalise la grille g à partir d\textquotesingle{}un fichier \end{DoxyCompactList}\item 
+void \hyperlink{grille_8c_ae621f51c60aa4fafaa0c9f6c9b5a4036}{alloue\+\_\+grille} (int l, int c, \hyperlink{structgrille}{grille} $\ast$g)
+\begin{DoxyCompactList}\small\item\em alloue\+\_\+grille initialisation de grille de taille l$\ast$c, tout les cellules par defaut sont mortes \end{DoxyCompactList}\item 
+void \hyperlink{grille_8c_a7074b2b15576e9d2b3cd15c3a1dc7012}{libere\+\_\+grille} (\hyperlink{structgrille}{grille} $\ast$g)
+\begin{DoxyCompactList}\small\item\em libere\+\_\+grille liberation de memoire qui est occupee par grille \end{DoxyCompactList}\item 
+void \hyperlink{grille_8c_a63b3ae16c86b568f6aa8f9ce84128b1e}{copie\+\_\+grille} (\hyperlink{structgrille}{grille} gs, \hyperlink{structgrille}{grille} gd)
+\begin{DoxyCompactList}\small\item\em copie\+\_\+grille recopie gs dans gd (sans allocation) \end{DoxyCompactList}\item 
+void \hyperlink{grille_8c_a16cff3363381fbee834e253f081a2fa4}{vieillissement} (\hyperlink{structgrille}{grille} g, int i, int j)
+\begin{DoxyCompactList}\small\item\em vieillissement change l\textquotesingle{}age de cellule \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Gaydamakha Mikhail 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{grille.\+c@{grille.\+c}!alloue\+\_\+grille@{alloue\+\_\+grille}}
+\index{alloue\+\_\+grille@{alloue\+\_\+grille}!grille.\+c@{grille.\+c}}
+\subsubsection[{\texorpdfstring{alloue\+\_\+grille(int l, int c, grille $\ast$g)}{alloue_grille(int l, int c, grille *g)}}]{\setlength{\rightskip}{0pt plus 5cm}void alloue\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{int}]{l, }
+\item[{int}]{c, }
+\item[{{\bf grille} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8c_ae621f51c60aa4fafaa0c9f6c9b5a4036}{}\label{grille_8c_ae621f51c60aa4fafaa0c9f6c9b5a4036}
+
+
+alloue\+\_\+grille initialisation de grille de taille l$\ast$c, tout les cellules par defaut sont mortes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & nombre de ligne \\
+\hline
+{\em c} & nombre de colonnes \\
+\hline
+{\em g} & grille \\
+\hline
+\end{DoxyParams}
+\index{grille.\+c@{grille.\+c}!copie\+\_\+grille@{copie\+\_\+grille}}
+\index{copie\+\_\+grille@{copie\+\_\+grille}!grille.\+c@{grille.\+c}}
+\subsubsection[{\texorpdfstring{copie\+\_\+grille(grille gs, grille gd)}{copie_grille(grille gs, grille gd)}}]{\setlength{\rightskip}{0pt plus 5cm}void copie\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{gs, }
+\item[{{\bf grille}}]{gd}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8c_a63b3ae16c86b568f6aa8f9ce84128b1e}{}\label{grille_8c_a63b3ae16c86b568f6aa8f9ce84128b1e}
+
+
+copie\+\_\+grille recopie gs dans gd (sans allocation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gs} & grille \\
+\hline
+{\em gd} & grille \\
+\hline
+\end{DoxyParams}
+\index{grille.\+c@{grille.\+c}!init\+\_\+grille\+\_\+from\+\_\+file@{init\+\_\+grille\+\_\+from\+\_\+file}}
+\index{init\+\_\+grille\+\_\+from\+\_\+file@{init\+\_\+grille\+\_\+from\+\_\+file}!grille.\+c@{grille.\+c}}
+\subsubsection[{\texorpdfstring{init\+\_\+grille\+\_\+from\+\_\+file(char $\ast$filename, grille $\ast$g)}{init_grille_from_file(char *filename, grille *g)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+grille\+\_\+from\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename, }
+\item[{{\bf grille} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8c_adf5501cc0bbad28f5ffc561d92197e4e}{}\label{grille_8c_adf5501cc0bbad28f5ffc561d92197e4e}
+
+
+init\+\_\+grille\+\_\+from\+\_\+file alloue et initalise la grille g à partir d\textquotesingle{}un fichier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & nom du fichier à ouvrir \\
+\hline
+{\em g} & grille \\
+\hline
+\end{DoxyParams}
+\index{grille.\+c@{grille.\+c}!libere\+\_\+grille@{libere\+\_\+grille}}
+\index{libere\+\_\+grille@{libere\+\_\+grille}!grille.\+c@{grille.\+c}}
+\subsubsection[{\texorpdfstring{libere\+\_\+grille(grille $\ast$g)}{libere_grille(grille *g)}}]{\setlength{\rightskip}{0pt plus 5cm}void libere\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8c_a7074b2b15576e9d2b3cd15c3a1dc7012}{}\label{grille_8c_a7074b2b15576e9d2b3cd15c3a1dc7012}
+
+
+libere\+\_\+grille liberation de memoire qui est occupee par grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+\end{DoxyParams}
+\index{grille.\+c@{grille.\+c}!vieillissement@{vieillissement}}
+\index{vieillissement@{vieillissement}!grille.\+c@{grille.\+c}}
+\subsubsection[{\texorpdfstring{vieillissement(grille g, int i, int j)}{vieillissement(grille g, int i, int j)}}]{\setlength{\rightskip}{0pt plus 5cm}void vieillissement (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g, }
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8c_a16cff3363381fbee834e253f081a2fa4}{}\label{grille_8c_a16cff3363381fbee834e253f081a2fa4}
+
+
+vieillissement change l\textquotesingle{}age de cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+{\em i} & ligne \\
+\hline
+{\em j} & colonne \\
+\hline
+\end{DoxyParams}

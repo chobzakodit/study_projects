@@ -1,0 +1,138 @@
+\hypertarget{io_8c}{}\section{/home/michel/\+Bureau/\+Etudes/\+Td\+D/\+Jeu/src/io.c File Reference}
+\label{io_8c}\index{/home/michel/\+Bureau/\+Etudes/\+Td\+D/\+Jeu/src/io.\+c@{/home/michel/\+Bureau/\+Etudes/\+Td\+D/\+Jeu/src/io.\+c}}
+{\ttfamily \#include \char`\"{}io.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{io_8c_a634cf584c380ce221d5d4199f3e813bd}{affiche\+\_\+trait} (int c)
+\begin{DoxyCompactList}\small\item\em affiche\+\_\+trait affichage d\textquotesingle{}un trait horizontal \end{DoxyCompactList}\item 
+void \hyperlink{io_8c_ad3febb3193c597c6eaf9c78662d588c3}{affiche\+\_\+ligne} (\hyperlink{structgrille}{grille} g, int l)
+\begin{DoxyCompactList}\small\item\em affiche\+\_\+ligne affichage d\textquotesingle{}une ligne de la grille \end{DoxyCompactList}\item 
+void \hyperlink{io_8c_a90cb8ec05374b46d9995705ed4954f34}{affiche\+\_\+grille} (\hyperlink{structgrille}{grille} g)
+\begin{DoxyCompactList}\small\item\em affiche\+\_\+grille affichage d\textquotesingle{}une grille \end{DoxyCompactList}\item 
+void \hyperlink{io_8c_ab36a6f8957cd3e682119007836ce6ad5}{efface\+\_\+grille} (\hyperlink{structgrille}{grille} g)
+\begin{DoxyCompactList}\small\item\em efface\+\_\+grille effacement d\textquotesingle{}une grille \end{DoxyCompactList}\item 
+void \hyperlink{io_8c_a558601f79e6853028ccfef1cbad16a58}{debut\+\_\+jeu} (\hyperlink{structgrille}{grille} $\ast$g, \hyperlink{structgrille}{grille} $\ast$gc, char $\ast$truc)
+\begin{DoxyCompactList}\small\item\em debut\+\_\+jeu debute le jeu \end{DoxyCompactList}\item 
+void \hyperlink{io_8c_ab4ff03c635c8885d2d23b1abe8dd9eb1}{jeu} (char $\ast$file, \hyperlink{structgrille}{grille} g, \hyperlink{structgrille}{grille} gc)
+\begin{DoxyCompactList}\small\item\em jeu lance toutes les fonction (avec la possibilite relancement pour nouveau grille) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Gaydamakha Mikhail 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{io.\+c@{io.\+c}!affiche\+\_\+grille@{affiche\+\_\+grille}}
+\index{affiche\+\_\+grille@{affiche\+\_\+grille}!io.\+c@{io.\+c}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+grille(grille g)}{affiche_grille(grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8c_a90cb8ec05374b46d9995705ed4954f34}{}\label{io_8c_a90cb8ec05374b46d9995705ed4954f34}
+
+
+affiche\+\_\+grille affichage d\textquotesingle{}une grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+\end{DoxyParams}
+\index{io.\+c@{io.\+c}!affiche\+\_\+ligne@{affiche\+\_\+ligne}}
+\index{affiche\+\_\+ligne@{affiche\+\_\+ligne}!io.\+c@{io.\+c}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+ligne(grille g, int l)}{affiche_ligne(grille g, int l)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+ligne (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g, }
+\item[{int}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8c_ad3febb3193c597c6eaf9c78662d588c3}{}\label{io_8c_ad3febb3193c597c6eaf9c78662d588c3}
+
+
+affiche\+\_\+ligne affichage d\textquotesingle{}une ligne de la grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+{\em l} & numero de la ligne à afficher \\
+\hline
+\end{DoxyParams}
+\index{io.\+c@{io.\+c}!affiche\+\_\+trait@{affiche\+\_\+trait}}
+\index{affiche\+\_\+trait@{affiche\+\_\+trait}!io.\+c@{io.\+c}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+trait(int c)}{affiche_trait(int c)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+trait (
+\begin{DoxyParamCaption}
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8c_a634cf584c380ce221d5d4199f3e813bd}{}\label{io_8c_a634cf584c380ce221d5d4199f3e813bd}
+
+
+affiche\+\_\+trait affichage d\textquotesingle{}un trait horizontal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & quantite de case \\
+\hline
+\end{DoxyParams}
+\index{io.\+c@{io.\+c}!debut\+\_\+jeu@{debut\+\_\+jeu}}
+\index{debut\+\_\+jeu@{debut\+\_\+jeu}!io.\+c@{io.\+c}}
+\subsubsection[{\texorpdfstring{debut\+\_\+jeu(grille $\ast$g, grille $\ast$gc, char $\ast$truc)}{debut_jeu(grille *g, grille *gc, char *truc)}}]{\setlength{\rightskip}{0pt plus 5cm}void debut\+\_\+jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf grille} $\ast$}]{g, }
+\item[{{\bf grille} $\ast$}]{gc, }
+\item[{char $\ast$}]{truc}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8c_a558601f79e6853028ccfef1cbad16a58}{}\label{io_8c_a558601f79e6853028ccfef1cbad16a58}
+
+
+debut\+\_\+jeu debute le jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+{\em gc} & grille \\
+\hline
+{\em truc} & sert à signaler, si l\textquotesingle{}utilisateur veut charger un autre fichier \\
+\hline
+\end{DoxyParams}
+\index{io.\+c@{io.\+c}!efface\+\_\+grille@{efface\+\_\+grille}}
+\index{efface\+\_\+grille@{efface\+\_\+grille}!io.\+c@{io.\+c}}
+\subsubsection[{\texorpdfstring{efface\+\_\+grille(grille g)}{efface_grille(grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}void efface\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8c_ab36a6f8957cd3e682119007836ce6ad5}{}\label{io_8c_ab36a6f8957cd3e682119007836ce6ad5}
+
+
+efface\+\_\+grille effacement d\textquotesingle{}une grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+\end{DoxyParams}
+\index{io.\+c@{io.\+c}!jeu@{jeu}}
+\index{jeu@{jeu}!io.\+c@{io.\+c}}
+\subsubsection[{\texorpdfstring{jeu(char $\ast$file, grille g, grille gc)}{jeu(char *file, grille g, grille gc)}}]{\setlength{\rightskip}{0pt plus 5cm}void jeu (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{file, }
+\item[{{\bf grille}}]{g, }
+\item[{{\bf grille}}]{gc}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8c_ab4ff03c635c8885d2d23b1abe8dd9eb1}{}\label{io_8c_ab4ff03c635c8885d2d23b1abe8dd9eb1}
+
+
+jeu lance toutes les fonction (avec la possibilite relancement pour nouveau grille) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & fichier à ouvrir \\
+\hline
+{\em g} & grille \\
+\hline
+{\em gc} & grille \\
+\hline
+\end{DoxyParams}
